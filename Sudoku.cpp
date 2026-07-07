@@ -40,4 +40,16 @@ bool Sudoku::isValid(int row, int col, int num) {
     return true;
 }
 
+bool Sudoku::findEmpty(int& row, int& col) {
+    for(int i=0; i<9; i++) {
+        for(int j=0; j<9; j++) {
+            if(board[i][j]==0){
+                row = i;
+                col = j;
+                return true;
+            }
+        }
+    }
 
+    return false;
+}
