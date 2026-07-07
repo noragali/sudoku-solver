@@ -15,6 +15,6 @@ private:
 public:
     void printBoard();
     void solve();
-    void isValid();
-    void findEmpty();
+    bool isValid(int row, int col, int num);
+    bool findEmpty(int& row, int& col);
 };
