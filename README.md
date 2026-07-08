@@ -10,6 +10,6 @@ Features
     Easy
     Medium
     Hard
--Prints the Sudoku board in a readable format
+- Prints the Sudoku board in a readable format
 - Handles invalid user input
 - Separates functionality using a class-based structure
