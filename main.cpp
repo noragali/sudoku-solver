@@ -4,7 +4,16 @@ using namespace std;
 
 int main() {
     Sudoku sudoku;
+
+    cout << "Initial board: " << endl;
     sudoku.printBoard();
 
-    return 1;
+    if(sudoku.solve()) {
+        cout<<"\nSolved board:\n";
+        sudoku.printBoard();
+    } else {
+        cout<<"No solution exists!" << endl;
+    }
+
+    return 0;
 }
