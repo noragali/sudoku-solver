@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Sudoku.h"
+#include <fstream>
+#include <string>
 using namespace std;
 
 void Sudoku::printBoard()
@@ -72,4 +74,17 @@ bool Sudoku::solve() {
 
     }
     return false;
+}
+
+bool Sudoku::loadFromFile(const string &filename) {
+    ifstream file(filename);
+    if(!file) return false;
+
+    for(int i=0; i<9; i++) {
+        for(int j=0; j<9; j++) {
+            if(!(file >> board[i][j])) return false;
+        }
+    }
+    return true;
+
 }

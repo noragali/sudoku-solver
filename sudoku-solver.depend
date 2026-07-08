@@ -1,11 +1,14 @@
 # depslib dependency file v1.0
-1783501601 source:c:\users\norag\onedrive\dators\projects\sudoku solver cpp\sudoku-solver\sudoku.cpp
+1783509380 source:c:\users\norag\onedrive\dators\projects\sudoku solver cpp\sudoku-solver\sudoku.cpp
 	<iostream>
 	"Sudoku.h"
+	<fstream>
+	<string>
 
-1783424659 c:\users\norag\onedrive\dators\projects\sudoku solver cpp\sudoku-solver\sudoku.h
+1783509358 c:\users\norag\onedrive\dators\projects\sudoku solver cpp\sudoku-solver\sudoku.h
+	<string>
 
-1783501719 source:c:\users\norag\onedrive\dators\projects\sudoku solver cpp\sudoku-solver\main.cpp
+1783509982 source:c:\users\norag\onedrive\dators\projects\sudoku solver cpp\sudoku-solver\main.cpp
 	<iostream>
 	"Sudoku.h"
 
