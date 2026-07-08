@@ -5,5 +5,6 @@ using namespace std;
 int main() {
     Sudoku sudoku;
     sudoku.printBoard();
+
     return 1;
 }

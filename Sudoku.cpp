@@ -53,3 +53,23 @@ bool Sudoku::findEmpty(int& row, int& col) {
 
     return false;
 }
+
+bool Sudoku::solve() {
+    int row;
+    int col;
+
+    if(!findEmpty(row, col))
+        return true;
+
+        for(int num = 1; num <=9; num++) {
+            if(isValid(row, col, num)) {
+                board[row][col] = num;
+                if(solve())
+                    return true;
+                else
+                    board[row][col] = 0;
+        }
+
+    }
+    return false;
+}
